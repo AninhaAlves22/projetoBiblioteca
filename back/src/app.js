@@ -3,10 +3,10 @@ import conectaNaDataBase from "./config/dbConnect.js";
 import cors from 'cors';
 import routes from "./routes/index.js";
 
-const conexao = await conectaNaDataBase(); //executa a conexão com o mongo
+const conexao = await conectaNaDataBase(); 
 
 conexao.on("error", (error)=>{
-    console.error("Erro de conexão", error); //exibe uma mensagem de erro se acontecer algum erro na conexão
+    console.error("Erro de conexão", error); 
 });
 
 conexao.once("open", ()=>{ 
@@ -14,8 +14,8 @@ conexao.once("open", ()=>{
 });
 
 const app = express();
-app.use(cors());  // Isso vai permitir que qualquer domínio acesse seu backend
-routes(app); //executa a função routes (importada de routes/index.js)
+app.use(cors()); 
+routes(app); 
 
 export default app;
 

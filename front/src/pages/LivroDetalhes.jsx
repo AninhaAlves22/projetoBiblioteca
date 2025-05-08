@@ -95,7 +95,7 @@ const LivroDetalhes = () => {
 
                         <div className="col-12 p-3 mt-5">
                           <h5>Lista de usuarios que fizeram emprestimo desse livro</h5>
-                          <table className="table table-striped table-light mt-4">
+                          <table className="table table-striped table-light mt-4 table-livros">
                             <thead>
                               <tr>
                                 <th>id usuario</th>

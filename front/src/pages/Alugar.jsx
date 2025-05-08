@@ -126,7 +126,7 @@ const Alugar = () => {
                   <p>Data do empréstimo: {new Date().toLocaleDateString('pt-BR')}</p>
                   <p><strong>Data devolução: {new Date(new Date().setDate(new Date().getDate() + 15)).toLocaleDateString('pt-BR')}</strong></p>
                   <button className="btn btn-warning" style={{ marginRight: '3px' }} onClick={handleConfirmarAluguel}>Confirmar Aluguel</button>
-                  <button className="btn btn-secondary" onClick={() => navigate(-1)}>Cancelar</button>
+                  <button className="btn btn-secondary botaoCanelar" onClick={() => navigate(-1)}>Cancelar</button>
                 </>
               ) : (
                 <>
