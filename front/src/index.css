@@ -1,0 +1,428 @@
+img {
+  max-width: 100%;
+
+}
+
+main {
+  flex: 1;
+}
+
+.navbar-nav {
+  align-items: center
+}
+
+
+.searchForm {
+  display: flex;
+
+}
+
+.searchBar {
+  flex: 1;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 0.4rem;
+  font-size: 0.9rem;
+  margin-right: 0.45rem;
+  margin-bottom: 0.6rem;
+
+}
+
+.btnSearch {
+  padding: 0.7rem 0.8rem;
+  border: none;
+  border-radius: 0.4rem;
+  background-color: #fff;
+  color: black;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-bottom: 0.6rem;
+}
+
+
+.section_title {
+  margin-top: 3.3rem;
+  height: 17rem;
+}
+
+.section_title_h1 {
+  padding-top: 4rem;
+}
+
+.contaiiner_home--carousel {
+  margin-top: 1.3rem;
+}
+
+
+/* CARROSSEL */
+.conteinerTituloCarrossel {
+  background-color: #F8BC08;
+  width: 80%;
+  margin: auto;
+  padding: 7px 0px 10px 10px;
+  border: #c59504 solid 1px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
+
+.tituloCarrosel-text {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 500;
+  font-size: 28px;
+  box-sizing: border-box;
+}
+
+.containerCarrossel {
+  width: 80%;
+  margin: auto;
+}
+
+.cardLivro {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.capaLivro {
+  width: 250px;
+  display: flex;
+  height: 400px;
+}
+
+.img-capa {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.carrossel-titulo {
+  margin-top: 15px;
+}
+
+.carrossel-autor {
+  color: #615f5f;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 3px 0px;
+}
+
+.carrossel-sinopse {
+  font-weight: bold;
+  color: black;
+}
+
+.descricaoLivro {
+  font-size: 16px;
+  color: #212529;
+  line-height: 1.5;
+  max-height: 35%;
+  overflow: auto;
+  text-overflow: ellipsis;
+}
+
+.generosLivro {
+  margin: 20px 0px;
+}
+
+.estoqueLivro {
+  font-size: 14px;
+  color: #534f4f;
+
+}
+
+.detalhesLivro {
+  flex: 1;
+  padding-left: 20px;
+  overflow-y: auto;
+}
+
+.carrossel-estoque-botao {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+
+.botaoAlugar {
+  background: gold;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.swiper-pagination {
+  position: relative;
+  bottom: -10px;
+}
+
+
+@media (max-width:991px) {
+  .containerCarrossel {
+    width: 70%;
+  }
+}
+
+/* responsividade  */
+@media (max-width: 768px) {
+  .detalhesLivro {
+    display: none;
+  }
+
+  .capaLivro {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    display: flex;
+  }
+
+  .cardLivro {
+    justify-content: center;
+    display: flex;
+  }
+
+  .img-capa {
+    width: 250px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .garota {
+    display: none;
+  }
+}
+
+
+
+/* footer */
+footer {
+  padding: 0;
+  margin: 0;
+}
+
+.link-footer {
+  text-decoration: none;
+}
+
+.ul-footer {
+  list-style: none;
+  padding: 0;
+
+}
+
+.container-footer {
+  min-height: 3.5rem;
+}
+
+/* deixa o footer no final da pagina independente do conteudo */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* catalogo */
+
+.book-cover {
+  width: 100%;
+  height: 310px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.mainTeste {
+  border: solid transparent 1px;
+}
+
+/* singleBook */
+
+.content-book__p {
+  margin-bottom: 0px;
+}
+
+.content-book__p span {
+  font-weight: bold;
+}
+
+.resultado-busca__h2 {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+
+}
+
+
+.section-teste {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.card-body {
+  flex-grow: 1;
+}
+
+
+.card-teste {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.card-teste img {
+  max-height: 435px;
+  object-fit: cover;
+}
+
+.card-body-teste {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form-teste {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+
+}
+
+@media (max-width: 624px) {
+  .botao-voltar {
+    display: none;
+  }
+}
+
+
+/* perfil usuário */
+
+.pagina-perfil__fonte {
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+.sidebar__button-sair {
+  background-color: #ffc107;
+  border: none;
+  text-decoration: none;
+  font-size: 23px;
+  padding-left: 0px;
+}
+
+/* aluguel de livros */
+.aluguel__h1 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.aluguel-div__img {
+  width: 250px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  flex-direction: column;
+  margin-right: .8rem;
+}
+
+.aluguel-div__img img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: .8rem;
+}
+
+.aluguel-div__detalhes {
+  width: 300px;
+  height: 400px;
+  padding: 20px;
+}
+
+.aluguel-div__content {
+  margin-left: 10rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.aluguel-section__livro {
+  flex: 1;
+  display: flex;
+  width: 400px;
+}
+
+.aluguel-dados__confirmacao {
+  margin-left: 30px;
+  width: 20rem;
+  max-width: 450px;
+  padding: 20px;
+}
+
+.sinopse-scroll {
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+
+
+@media(max-width:981px) {
+  .aluguel-div__img {
+    display: none;
+  }
+
+  .aluguel-div__detalhes {
+    overflow: auto;
+    width: 20rem;
+    box-sizing: border-box;
+  }
+
+
+
+  .aluguel-dados__confirmacao {
+    /* width: 300px; */
+    overflow: auto;
+    width: 20rem;
+    box-sizing: border-box;
+  }
+
+  .aluguel-div__content {
+    margin-left: 5.6rem;
+  }
+
+  .book-img {
+    display: none;
+  }
+}
+
+@media(max-width: 486px) {
+  footer {
+    display: none;
+  }
+}
+
+
+
+
+
+
+.book-img {
+
+  width: 250px;
+  height: 350px;
+}
+
+.book-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

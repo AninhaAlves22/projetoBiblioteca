@@ -1,0 +1,35 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Pastas de build
+front/dist
+front/dist-ssr
+back/dist
+
+
+# Arquivos locais
+*.local
+
+# node_modules de frontend e backend
+front/node_modules
+back/node_modules
+
+# Arquivos de ambiente
+back/.env
+
+# Editor directories and files
+.vscode/
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
