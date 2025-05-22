@@ -8,7 +8,7 @@ const LinkBook = ({titulo, autor, capa, _id}) => {
         <div className="col">
             <Link to={`/livro/${_id}`} style={{textDecoration: "none"}}>
 
-                <div className="card">
+                <div className="card card-img_catalogo">
 
                     <img src={capa}    className="img-fluid shadow rounded book-cover" alt="" />
 
