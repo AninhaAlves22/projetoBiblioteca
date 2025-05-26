@@ -23,14 +23,18 @@ const UsuarioEncontrado = ({usuario}) => {
   const calcularStatus = (emprestimo) => {
     if (emprestimo.dataDevolucao) return "Devolvido";
     const hoje = new Date();
-    const prevista = new Date(emprestimo.dataPrevistaDevolucao);
+    hoje.setHours(0, 0, 0, 0);
+    const prevista = new Date(emprestimo.dataDevolucaoPrevista);
+    prevista.setHours(0, 0, 0, 0);
     return hoje > prevista ? "Atrasado" : "Em dia";
   };
 
   const diasAtraso = (emprestimo) => {
     if (emprestimo.dataDevolucao) return 0;
     const hoje = new Date();
+    hoje.setHours(0, 0, 0, 0);
     const prevista = new Date(emprestimo.dataDevolucaoPrevista);
+    prevista.setHours(0, 0, 0, 0);
     const diff = hoje - prevista;
     return diff > 0 ? Math.ceil(diff / (1000 * 60 * 60 * 24)) : 0;
   };

@@ -6,14 +6,14 @@ const LivroEncontradoAdm = ({livro}) => {
     <>
       <div className="mt-5">
         <hr/>
-        <div className="card card-teste" style={{height:"435px"}}>
+        <div className="card card-teste" style={{height:"400px"}}>
           <div className="row ">
 
             <div className="col-md-3 d-none d-lg-block">
                 <div className="">
-                    <div className=" d-flex justify-content-center">
+                    <div className=" d-flex " >
 
-                        <img src={livro.capa} className="img-fluid" alt={livro.titulo} style={{height:"433px", borderRadius: "5px"}}  />
+                        <img src={livro.capa} className="img-fluid" alt={livro.titulo} style={{height:"400px", borderRadius: "5px", width:"250px" }}  />
 
                     </div>
                 </div>
